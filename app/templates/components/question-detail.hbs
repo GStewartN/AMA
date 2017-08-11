@@ -3,4 +3,11 @@
   <p>{{question.content}}</p>
   <h4>Additional Notes:</h4>
   <p>{{question.notes}}</p>
-<button {{action 'delete' question}}>Delete Question</button>
+  <button {{action 'delete' question}}>Delete Question</button>
+  <br>
+  <h2>Answers</h2>
+  <ul>
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </ul>

@@ -9,7 +9,8 @@ export default Ember.Component.extend({
     saveAnswer() {
       var params = {
         name: this.get('name') ? this.get('name') : "Anonymous",
-        reply: this.get('reply') ? this.get('reply') : "No Reply..."
+        reply: this.get('reply') ? this.get('reply') : "No Reply...",
+        question: this.get('question')
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);
