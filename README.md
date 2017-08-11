@@ -41,6 +41,44 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+## Planning
+
+1. Configuration/dependencies
+
+ * ember-cli pre-loaded dependencies and assets, possibly bootstrap
+ * google firebase
+
+2. Specifications
+
+ | Behavior | Input | Output |
+ |----------|-------|--------|
+ | User visits home page, chooses to ask question | Click ask question button | Home page displays form to enter question|
+ | User enters question | How do I install nodejs? | Question displays on home page as link with author's name|
+ | User views a question | Click any question link | Question page displays with the content, edit and delete buttons, and an answer button |
+ | User chooses to answer question | Click answer button | A form to enter answer displays on the question page |
+ | User enters answer | Go to nodejs site and follow directions | The answer is displays below the question along with previous answers |
+
+ 3. Integration
+
+  * index route
+  * links route
+  * firebase setup and config
+  * question route and components
+  * edit question component
+  * answer components
+
+4. UX/UI
+
+ * add bootstrap if time allows
+ * refine styling
+
+5. Polish
+
+ * refactor where possible
+ * clean/remove whitespace and unnecessary comments
+ * proofread and edit all displayed text
+ * polish readme
+
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
