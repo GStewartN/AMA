@@ -18,6 +18,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyCiU5Ki-UCQzIBSb0tiXF7PazXT8PqG0PU",
+    authDomain: "techama-d05fd.firebaseapp.com",
+    databaseURL: "https://techama-d05fd.firebaseio.com",
+    storageBucket: "techama-d05fd.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

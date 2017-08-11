@@ -1,0 +1,10 @@
+{ "questions": [{
+  "author": "Joe Schmo",
+  "content": "How do I make a textbox in html?",
+  "notes": "I tried this: <input value='textbox'>"
+  }, {
+  "author": "Bob Dobbs",
+  "content": "How do I start an Ember server?",
+  "notes": "I tried: $ ember -g server"
+  }]
+}
