@@ -5,9 +5,17 @@
 <h3>Questions:</h3>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+<h3>Answers:</h3>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>"{{answer.reply}}" by {{answer.name}}</li>
+  {{/each}}
+</ul>

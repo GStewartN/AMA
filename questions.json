@@ -6,5 +6,12 @@
   "author": "Bob Dobbs",
   "content": "How do I start an Ember server?",
   "notes": "I tried: $ ember -g server"
+  }],
+  "answers": [{
+    "name:": "sarah",
+    "reply": "Use $ ember s to start the server."
+  }, {
+    "name": "Mike",
+    "reply": "Use $ember g component <component-name> to add a component."
   }]
 }
