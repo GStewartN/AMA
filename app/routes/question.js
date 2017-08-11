@@ -14,7 +14,6 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('question');
     },
-
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
@@ -24,7 +23,6 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question');
     },
-
     destroyQuestion(question) {
       var answer_deletions = question.get('answers').map(function(answer) {
         return answer.destroyRecord();
@@ -34,7 +32,6 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
-
     destroyAnswer(answer) {
       answer.destroyRecord();
       this.transitionTo('question');

@@ -17,7 +17,7 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    
     firebase: {
       apiKey: "AIzaSyCiU5Ki-UCQzIBSb0tiXF7PazXT8PqG0PU",
     authDomain: "techama-d05fd.firebaseapp.com",
