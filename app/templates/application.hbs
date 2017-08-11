@@ -1,9 +1,17 @@
 <div class= "container">
-  <header class= "jumbotron">
+  <header>
     <h1>AMA</h1>
-    {{#link-to 'about'}}About{{/link-to}}<br>
-    {{#link-to 'contact'}}Contact{{/link-to}}<br>
-    {{#link-to 'index'}}Home{{/link-to}}
+    <div class="row">
+      <div class="col-sm-4">
+        {{#link-to 'about'}}About{{/link-to}}
+      </div>
+      <div class="col-sm-4">
+        {{#link-to 'contact'}}Contact{{/link-to}}
+      </div>
+      <div class="col-sm-4">
+        {{#link-to 'index'}}Home{{/link-to}}
+      </div>
+    </div>
   </header>
     {{outlet}}
 </div>
